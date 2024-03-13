@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_140sdp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/Btn_selectDashboard_assetTagging"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:background="@drawable/custom_backgrond2"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:text="ASSET TAGGING"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/theme_blue" />
+
+
+        <Button
+            android:id="@+id/Btn_selectDashboard_LocationTagging"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:background="@drawable/custom_backgrond2"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:text="LOCATION TAGING"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/theme_blue" />
+
+        <Button
+            android:id="@+id/Btn_selectDashboard_AssetLocation"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:background="@drawable/custom_backgrond2"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:text="Assign Location"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/theme_blue" />
+        <Button
+            android:id="@+id/Btn_selectDashboard_Home"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:background="@drawable/custom_backgrond2"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:text="HOME"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/theme_blue" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

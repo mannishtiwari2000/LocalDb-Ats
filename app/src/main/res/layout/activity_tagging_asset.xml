@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaggingAsset">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_TaggingAsset_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_blue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="@color/design_default_color_background"
+        app:titleTextColor="@color/design_default_color_primary">
+
+        <ImageView
+            android:id="@+id/Back_TaggingAsset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10sdp"
+
+            android:text="Tagging Asset"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+        <ImageView
+            android:id="@+id/Logout_TaggingAsset"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_login_24" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edt_assetId_tagging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/custom_dialog5"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:hint="asset id number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        />
+
+
+    <EditText
+        android:id="@+id/edt_assetRfido_taggingset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:padding="@dimen/_10sdp"
+        android:hint="RFID tag id "
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/custom_dialog5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_Cancel_Tagging"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:typeface="sans"
+            android:gravity="center"
+            android:background="@drawable/custom_backgrond2"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/theme_blue" />
+
+
+        <Button
+            android:id="@+id/Btn_TagAsset_Tagging"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:typeface="sans"
+            android:gravity="center"
+            android:background="@drawable/custom_dialog3"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:text="TAG Asset"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/Btn_ReAssign_Tagging"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:typeface="sans"
+            android:gravity="center"
+            android:backgroundTint="#21E329"
+            android:background="@drawable/custom_dialog3"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:text="TAG ReAssign"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
